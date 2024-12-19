@@ -62,6 +62,8 @@ class NodeRuntimeVersionUtils {
         return "NODEJS_18_X";
       case NodeVersion.NODE_20:
         return "NODEJS_20_X";
+      case NodeVersion.NODE_22:
+        return "NODEJS_22_X";
       default:
         throw new Error(`Unsupported node runtime ${runtimeVersion}`);
     }
@@ -75,6 +77,8 @@ class NodeRuntimeVersionUtils {
     runtimeVersion: NodeVersion
   ): string => {
     switch (runtimeVersion) {
+      case NodeVersion.NODE_22:
+        return "node22";
       case NodeVersion.NODE_20:
         return "node20";
       case NodeVersion.NODE_18:
@@ -99,6 +103,8 @@ class PythonRuntimeVersionUtils {
         return "PYTHON_3_11";
       case PythonVersion.PYTHON_3_12:
         return "PYTHON_3_12";
+      case PythonVersion.PYTHON_3_13:
+        return "PYTHON_3_13";
       default:
         throw new Error(`Unsupported python runtime ${runtimeVersion}`);
     }
@@ -131,6 +137,8 @@ class PythonRuntimeVersionUtils {
     runtimeVersion: PythonVersion
   ): string => {
     switch (runtimeVersion) {
+      case PythonVersion.PYTHON_3_13:
+        return "3.13";
       case PythonVersion.PYTHON_3_12:
         return "3.12";
       case PythonVersion.PYTHON_3_11:
