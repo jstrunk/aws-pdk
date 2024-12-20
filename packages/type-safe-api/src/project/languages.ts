@@ -15,6 +15,7 @@ export enum Language {
 export enum NodeVersion {
   NODE_18 = "NODE_18",
   NODE_20 = "NODE_20",
+  NODE_22 = "NODE_22",
 }
 
 /**
@@ -33,6 +34,7 @@ export enum JavaVersion {
 export enum PythonVersion {
   PYTHON_3_11 = "PYTHON_3_11",
   PYTHON_3_12 = "PYTHON_3_12",
+  PYTHON_3_13 = "PYTHON_3_13",
 }
 
 /**
